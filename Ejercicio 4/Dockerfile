@@ -1,6 +1,5 @@
-FROM node:8
-WORKDIR /usr/src/app
-RUN git clone https://github.com/nicopaez/passwordapi.git /usr/src/app
-RUN npm install --only=production
-EXPOSE 3000
-CMD [ "npm", "start" ]
+FROM openjdk:12-alpine
+COPY passwordapi.jar /passwordapi.jar
+EXPOSE 8080
+USER 405
+CMD ["java" ,"-jar", "/passwordapi.jar"]
