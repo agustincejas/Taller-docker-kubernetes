@@ -4,7 +4,7 @@
 *   kubectl apply -f deployment.yaml
 *   minikube ip
 *   kubectl get services
-*   curl <minukube ip>:<service port>/health   -> Validar que cambie el host de respuesta al hacer varias llamadas
+*   curl minukube-ip:service-port/health   -> Validar que cambie el host de respuesta al hacer varias llamadas
 
 ## Ejemplo
 *   minikube ip
